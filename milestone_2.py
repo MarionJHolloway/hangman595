@@ -1,14 +1,16 @@
 import random
 
-word_list = ["mango", "grape", "pear", "peach", "banana"]
-print(word_list)
+def validate_guess(guess) -> None:
+    if len(guess) == 1 & guess.isalpha():
+        print("Good guess!")
+    else:
+        print("Oops! That's not a valid input.")
 
-word = random.choice(word_list)
-print(word)
+def select_random_word() -> str:
+    word_list = ["mango", "grape", "pear", "peach", "banana"]
+    return random.choice(word_list)
+
+select_random_word()
 
 guess = input("Enter a single letter.")
-
-if len(guess) == 1 & guess.isalpha():
-    print("Good guess!")
-else:
-    print("Oops! That's not a valid input.")
+validate_guess(guess)
