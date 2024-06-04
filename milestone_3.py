@@ -1,5 +1,9 @@
 import random
 
+def select_random_word() -> str:
+    word_list = ["mango", "grape", "pear", "peach", "banana"]
+    return random.choice(word_list)
+
 def check_guess(guess: str) -> None:
     guess = guess.lower()
     if guess in word:
@@ -18,6 +22,5 @@ def ask_for_input():
     check_guess(guess)
 
 
-word_list = ["mango", "grape", "pear", "peach", "banana"]
-word = random.choice(word_list)
+select_random_word()
 ask_for_input()
