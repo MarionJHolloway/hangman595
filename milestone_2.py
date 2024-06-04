@@ -10,7 +10,12 @@ def select_random_word() -> str:
     word_list = ["mango", "grape", "pear", "peach", "banana"]
     return random.choice(word_list)
 
-select_random_word()
+def main():
+    select_random_word()
 
-guess = input("Enter a single letter.")
-validate_guess(guess)
+    guess = input("Enter a single letter.")
+    validate_guess(guess)
+
+
+if __name__ == "__main__":
+    main()

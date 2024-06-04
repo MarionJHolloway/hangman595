@@ -14,6 +14,7 @@ This is an implementation of the Hangman game, where the computer thinks of a wo
 Hangman selects a raondom word form a list.
 It asks the user to guess a letter.
 It checks if the user input is valid.
+It checks if the letter is in the word.
 
 ### What was the aim?
 
@@ -37,7 +38,7 @@ It checks if the user input is valid.
 ## Usage Instructions
 In the command line type:
 ```
-python3 milestone_2.py
+python3 milestone_3.py
 ```
 
 
