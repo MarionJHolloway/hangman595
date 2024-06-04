@@ -11,6 +11,9 @@ Hangman is a classic game in which a player thinks of a word and the other playe
 
 This is an implementation of the Hangman game, where the computer thinks of a word and the user tries to guess it. 
 ### What does Hangman do?
+Hangman selects a raondom word form a list.
+It asks the user to guess a letter.
+It checks if the user input is valid.
 
 ### What was the aim?
 
@@ -18,6 +21,10 @@ This is an implementation of the Hangman game, where the computer thinks of a wo
 
 ## Installation Instructions
 ### Necessary software
+- conda
+- git
+- VSCode (or other IDE)
+
 
 ### Environment setup
 1. Clone the repository
@@ -28,6 +35,11 @@ This is an implementation of the Hangman game, where the computer thinks of a wo
 ### Final steps
 
 ## Usage Instructions
+In the command line type:
+```
+python3 milestone_2.py
+```
+
 
 ## File Structure
 
