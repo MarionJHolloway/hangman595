@@ -13,8 +13,10 @@ This is an implementation of the Hangman game, where the computer thinks of a wo
 ### What does Hangman do?
 Hangman selects a raondom word form a list.
 It asks the user to guess a letter.
-It checks if the user input is valid.
-It checks if the letter is in the word.
+If the input is not one letter of the alphabet, the user is prompted to enter a single alphabetical character.
+If the input has already been guessed, the user is prompted to try a different letter.
+It checks if the letter is in the word. If the guess is correct, the user is informed, and the blank word and number of characters to guess are updated. If the guess is incorrect, the number oflives is reduced and the user is informed. Regardless of whether the guess is correct or not, it is logged so that repeat guesses can be checked.
+
 
 ### What was the aim?
 
@@ -40,6 +42,7 @@ In the command line type:
 ```
 python3 milestone_3.py
 ```
+When prompted, type a single letter you think is in the word. 
 
 
 ## File Structure
