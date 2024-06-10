@@ -118,7 +118,7 @@ def play_game(word_list):
             print("Congratulations. You won the game!")
             break
 
-
-play_game(["mango", "grape", "pear", "peach", "banana"])
+if __name__ == "__main__":
+    play_game(["mango", "grape", "pear", "peach", "banana"])
 
             

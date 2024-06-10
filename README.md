@@ -48,12 +48,10 @@ When prompted, type a single letter you think is in the word.
 
 ## File Structure
 * [hangman](./hangman/)
-    * [hangman_Template.py](./hangman/hangman_Template.py)
-* [milestones](./milestones/)
-    * [milestone_2.py](./milestones/milestone_2.py)
-    * [milestone_3.py](./milestones/milestone_3.py)
-    * [milestone_4.py](./milestones/milestone_4.py)
-    * [milestone_5.py](./milestones/milestone_5.py)
+    * [milestone_2.py](./hangman/milestone_2.py)
+    * [milestone_3.py](./hangman/milestone_3.py)
+    * [milestone_4.py](./hangman/milestone_4.py)
+    * [milestone_5.py](./hangman/milestone_5.py)
 * [README.md](README.md)
 
 
