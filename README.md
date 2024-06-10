@@ -33,6 +33,10 @@ I learned how to write and debug classes to create an interactive command line g
 
 ### Environment setup
 1. Clone the repository
+```
+git clone https://github.com/MarionJHolloway/hangman595.git
+```
+2. Open repository in VSCode
 
 ### Installing dependancies
 This project does not require any dependancies. 
