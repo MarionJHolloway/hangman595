@@ -22,7 +22,6 @@ class Hangman:
         self.num_lives: int = num_lives
         self.word_list: list = word_list
         self.list_of_guesses: list = []
-    
 
     def ask_for_input(self):
         """
@@ -30,7 +29,6 @@ class Hangman:
         """
         guess = input("Enter a single letter.")
         self.__respond_to_input(guess)
-
 
     def __respond_to_input(self, guess):
         """
@@ -52,7 +50,6 @@ class Hangman:
         else:
             self.__check_guess(guess)
             self.list_of_guesses.append(guess)
-
     
     def __check_guess(self, guess: str) -> None:
         """
@@ -75,7 +72,6 @@ class Hangman:
             print(f"Sorry, {guess} is not in the word.")
             print(f"You have {self.num_lives} lives left.")
 
-
     def __reveal_letter_guessed(self, guess):
         """
         This function reveals where the guess is present in the word.
@@ -89,24 +85,19 @@ class Hangman:
             if letter == guess:
                 self.word_guessed[i] = guess
 
-
     def __update_number_of_letters_left_to_guess(self):
         """
         This function reduces the number of letters left to guess by one.
         """
         self.num_letters = self.num_letters - 1
-
-    
     
     def __reduce_number_of_lives(self):
         """
         This function reduces the number of lives left by one.
         """
         self.num_lives = self.num_lives -1
-    
 
-def play_game(word_list):
-    num_lives = 5
+def play_game(word_list, num_lives=5):
     game = Hangman(word_list, num_lives)
     while True:
         if game.num_lives == 0:
